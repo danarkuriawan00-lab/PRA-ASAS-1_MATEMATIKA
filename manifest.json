@@ -1,0 +1,9 @@
+{
+  "name": "Lembar IPAS",
+  "short_name": "Lembar Soal",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#2a2118",
+  "theme_color": "#9b1c1c"
+}

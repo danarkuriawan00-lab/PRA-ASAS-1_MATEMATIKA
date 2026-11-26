@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#2a2118" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Lembar Soal" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Lembar Soal · Pra Asesmen SAS 1 · Matematika</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="gate" class="lock-screen">
+      <div class="lock-card cover">
+        <div class="cover-kop">
+          <div class="kop-mark">MTK</div>
+          <div class="kop-text">
+            <p class="kop-kicker">Lembar Soal</p>
+            <h1>Pra Asesmen Sumatif Akhir Semester 1</h1>
+            <p class="kop-mapel">Matematika</p>
+          </div>
+        </div>
+
+        <div class="cover-meta">
+          <div class="cover-row">
+            <span>Jenis asesmen</span>
+            <b>Pra Asesmen SAS 1</b>
+          </div>
+          <div class="cover-row">
+            <span>Mata pelajaran</span>
+            <b>MTK</b>
+          </div>
+          <div class="cover-row">
+            <span>Mode tampilan</span>
+            <b>Aman · layar penuh</b>
+          </div>
+        </div>
+
+        <p class="lock-copy">
+          Soal hanya ditampilkan dalam layar penuh agar bilah alamat tersembunyi.
+          Pindah tab, memuat ulang, atau keluar dari layar penuh akan menutup soal.
+        </p>
+        <button type="button" id="btn-mulai" class="lock-btn">Masuk ke soal</button>
+      </div>
+    </div>
+
+    <div id="interrupt" class="lock-screen hidden" aria-live="assertive">
+      <div class="lock-card">
+        <div class="kop-mark">MTK</div>
+        <p class="kop-kicker">Tampilan ditutup</p>
+        <h1>Soal tidak dapat ditampilkan lagi</h1>
+        <p class="lock-copy">
+          Halaman terdeteksi tidak aktif karena tab lain, jendela lain, memuat
+          ulang, atau keluar dari layar penuh. Akses ke soal telah dihentikan.
+        </p>
+      </div>
+    </div>
+
+    <div id="flash" class="flash hidden" aria-hidden="true"></div>
+
+    <div class="page hidden" id="app">
+      <header class="kop">
+        <div class="kop-mark">MTK</div>
+        <div class="kop-text">
+          <p class="kop-kicker">Lembar Soal</p>
+          <h1>Pra Asesmen Sumatif Akhir Semester 1</h1>
+          <p class="kop-mapel">Matematika</p>
+        </div>
+      </header>
+
+      <section class="soal-frame" aria-label="Isi soal">
+        <div class="watermark" aria-hidden="true"></div>
+        <iframe
+          title="Soal Pra Asesmen Sumatif Akhir Semester 1 Matematika"
+          src="https://docs.google.com/document/d/1eb2kJJlyyOfI0dDrYEWFNJiXjSnULe_p/preview"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
